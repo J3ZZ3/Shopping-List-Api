@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "name": "food",
+    "quantity": 8,
+    "id": 2
+  },
+  {
+    "name": "Anos",
+    "quantity": 1000,
+    "id": 3
+  },
+  {
+    "name": "bod",
+    "quantity": 74,
+    "id": 4
+  }
+]
