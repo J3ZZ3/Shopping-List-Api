@@ -64,23 +64,31 @@ This project is a simple HTTP server that manages a shopping list. It allows use
 
 ### Adding an Item
 ```bash
-curl -X POST http://localhost:3000/shopping-list -H "Content-Type: application/json" -d '{"name": "milk", "quantity": 2}'
+cPOST http://localhost:3000/shopping-list
+-H "Content-Type: application/json"
+-d '{
+"name": "milk",
+"quantity": 2}'
 ```
 
 ### Retrieving the List
 ```bash
-curl http://localhost:3000/shopping-list
+GET http://localhost:3000/shopping-list
 ```
 
 ### Updating an Item
 ```bash
-curl -X PUT http://localhost:3000/shopping-list/1 -H "Content-Type: application/json" -d '{"quantity": 3}'
+PUT http://localhost:3000/shopping-list/1
+-H "Content-Type: application/json"
+-d '{
+"name": "egg",
+"quantity": 3
+}'
 ```
 
 ### Deleting an Item
 ```bash
-curl -X DELETE http://localhost:3000/shopping-list/1
+DELETE http://localhost:3000/shopping-list/1
 ```
 
-## License
-This project is licensed under the MIT License.
+
