@@ -64,7 +64,7 @@ This project is a simple HTTP server that manages a shopping list. It allows use
 
 ### Adding an Item
 ```bash
-cPOST http://localhost:3000/shopping-list
+POST http://localhost:3000/shopping-list
 -H "Content-Type: application/json"
 -d '{
 "name": "milk",
